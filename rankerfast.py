@@ -35,6 +35,7 @@ except:
     file.close()   
     sys.exit(1)
 
+# Sort the score highest to lowest and then get the top n scores based on the specified CLI arg
 entries = sorted(entries, key=itemgetter('score'), reverse=True)
 jsonOutput = json.dumps(entries[slice(entries_arg)], indent=4)
 
