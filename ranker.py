@@ -6,7 +6,7 @@ from operator import itemgetter
 
 start = round(time.time() * 1000)
 
-# Validate and store CLI areguments, create an error if the wrong number of arguments exits
+# Validate and store the CLI areguments, create an error if the wrong number of arguments exits
 if len(sys.argv) != 3:
     print("The command to run is: ranker.py <input_file> <entry_count>", file=sys.stderr)
     sys.exit(1)
